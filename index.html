@@ -111,6 +111,7 @@
     </p>
     <p style="margin:18px 0 0">
     Health check: <span class="status">&check; passing</span>
+    </p>
   </div>
 
   <div class="card">
@@ -118,9 +119,10 @@
     <p>After uploading, the workflow downloads the live page and looks for
        one specific word inside it:</p>
 <pre><code>curl -sf https://YOUR-SITE/ -o page.html
-grep -q "SITE&#45;OK" page.html</code>
+grep -q "SITE&#45;OK" page.html</code></pre>
     <p class="muted">Marker found &rarr; deploy succeeds.<br>
        Marker missing &rarr; deploy fails and the old version is restored.</p>
+  </div>
 
   <div class="card">
     <h2>Try it yourself</h2>
